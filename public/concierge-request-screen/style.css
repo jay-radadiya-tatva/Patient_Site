@@ -261,6 +261,7 @@ html[data-bs-theme="light"] .mid-content{
   }
 .form-group{
     width: 100%;
+    margin-bottom: 10px;
 }
 .iti.iti--allow-dropdown{
     width: 100%;
@@ -380,10 +381,6 @@ html[data-bs-theme="light"] .mid-content{
         top: 10px;
     }
 }
-
-
-
-
 
 
 
