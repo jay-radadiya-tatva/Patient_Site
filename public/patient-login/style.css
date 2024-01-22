@@ -40,12 +40,13 @@ body{
     background-repeat: no-repeat;
     background-blend-mode: lighten;
     background-size: 100% 100%;
-    filter: blur(8px);
+    filter: blur(20px);
     z-index: -1;
 }
 .page-header{
     height: 70px;
     z-index: 2;
+    background-color: #f9f9f9;
 }
 .logo-container{
     width: fit-content;
@@ -82,12 +83,13 @@ body{
 }
 .back-link{
     text-decoration: none;
-    color: black;
+    color: #56a6bc;
+    margin-left: -120px;
 }
 
 html[data-bs-theme="dark"]
 .back-link{
-    color: white;
+    color: #56a6bc;
 }
 
 .form-label-group {
@@ -99,6 +101,7 @@ html[data-bs-theme="dark"]
   .form-label-group > label {
     padding: var(--input-padding-y) var(--input-padding-x);
     background: transparent;
+    cursor: pointer
   }
   
   .form-label-group > label {
@@ -137,47 +140,59 @@ html[data-bs-theme="dark"]
   .form-label-group input:focus{
     background: transparent;
   }
-  .form-label-group input:not(:placeholder-shown) {
+  .form-label-group input:not(:placeholder-shown),
+  .form-label-group input:focus{
     padding-top: calc(var(--input-padding-y) + var(--input-padding-y) * (2 / 3));
     padding-bottom: calc(var(--input-padding-y) / 3);
     background: transparent !important;
+    box-shadow: none;
+    border-color: #56a6bc;
   }
   
-  .form-label-group input:not(:placeholder-shown) ~ label {
-    padding-top: calc(var(--input-padding-y) / 3);
-    padding-bottom: calc(var(--input-padding-y) / 3);
-    font-size: 12px;
-    color: #777;
-    background: transparent;
-  }
+  .form-label-group input:not(:placeholder-shown) ~ label,
+.form-label-group input:focus ~ label{
+  padding-top: calc(var(--input-padding-y) / 3);
+  padding-bottom: calc(var(--input-padding-y) / 3);
+  font-size: 12px;
+  color: #56a6bc;
+  background: transparent;
+}
 
+.submit-button{
+  background-color: #56a6bc;
+  border-color: #56a6bc;
+}
+.submit-button:hover{
+  background-color: #56a6bc;
+  border-color: #294952;
+}
 
-
-
-
+.forgot-pass-link{
+  color: #56a6bc
+}
 
 
 
 .footer-bg{
-    background-color: #353636;
+  background-color: #f9f9f9;
 }
 .footer{
-    padding-right: 30px;
-    height: 50px;
-    font-size: 0.8rem;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    color: white;
+  padding-right: 30px;
+  height: 50px;
+  font-size: 0.8rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  background-color: #f9f9f9;
 }
 .footer a{
-    text-decoration: none;
-    font-size: 0.8rem;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    color: white;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #353636;
 }
 .vertical-line{
-    content: " ";
-    height: 16px;
-    border: 1px solid white;
+  content: " ";
+  height: 16px;
+  border: 1px solid #353636;
 }
