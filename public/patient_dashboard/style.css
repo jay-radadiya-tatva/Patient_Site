@@ -2,9 +2,9 @@
     --input-padding-x: .75rem;
     --input-padding-y: .75rem;
   }
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); */
 
 *{
     padding: 0px;
@@ -24,10 +24,9 @@ body{
 .page-header{
     height: 70px;
     z-index: 2;
-    background-color: #f9f9f9;
 }
 .logo-container{
-    height: fit-content;
+    height: max-content;
 }
 .logo-container img{
     height: 65px;
@@ -44,6 +43,90 @@ body{
 .navbar{
     --bs-navbar-padding-y: 0;
 }
+.dashboard-header{
+    position: absolute;
+    left: 0;
+    top: -40px;
+}
+
+
+
+
+
+
+
+.divtable .tr {
+  overflow: hidden;
+  clear: both;
+  border-bottom: 1px solid #ccc;
+}
+
+.divtable .th,
+.divtable .td {
+  padding: 5px 10px;
+  float: left;
+}
+
+.divtable .th { font-weight: bold; }
+
+.created-date { width: 40%; }
+
+.lastname { width: 30%; }
+
+.username { width: 30%; }
+
+
+
+@media (max-width: 767px) {
+
+.accordion-xs .headings { display: none; }
+
+.accordion-xs .tr { border-bottom-color: #fff; }
+
+.accordion-xs .th,
+ .accordion-xs .td {
+  float: none;
+  width: auto;
+  padding: 0;
+}
+
+.accordion-xs .accordion-xs-toggle {
+  
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.accordion-xs .accordion-xs-toggle:hover
+
+
+.accordion-xs-collapse .inner { padding: 10px; }
+
+/* .accordion-xs-collapse .td:before { font-weight: bold; } */
+
+
+.accordion-xs .td.created-date span:before { content: ' Created date: '; }
+
+.accordion-xs-collapse .lastname:before { content: 'Last Name: '; }
+
+.accordion-xs-collapse .username:before { content: 'Username: '; }
+
+.accordion-xs .accordion-xs-toggle:after {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  
+}
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -77,4 +160,14 @@ body{
         padding-left: 2px;
         padding-right: 3px !important;
     }
+    .button-container button.add-button{
+        width: max-content;
+        padding-left: 2px;
+        padding-right: 3px !important;
+    }
+    .main-content {
+    margin-top: 100px !important;
 }
+}
+
+

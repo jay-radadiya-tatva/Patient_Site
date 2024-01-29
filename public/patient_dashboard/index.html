@@ -11,6 +11,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/cc903ec4b1.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
@@ -69,15 +70,18 @@
           </div>
           
         </div>
-        <nav class="navbar navbar-expand-md bg-body-tertiary">
-            <div class="container-fluid">
+        <div
+          class="col-12 position-relative px-0"
+        >
+        <nav class="navbar navbar-expand-md position-absolute z-1 bg-white  w-100 ">
+            <div class="container-fluid ">
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="#">Dasboard</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="#">Profile</a>
                   </li>
                 </ul>
                 
@@ -85,13 +89,72 @@
             </div>
           </nav>
       </div>
+      </div>
       
 
 
-      <div class="row main-container d-flex justify-content-center flex-grow-1">
+      <div class="row main-container d-flex justify-content-center flex-grow-1 mx-1 mx-md-3">
         <div
-          class="col-12 col-sm-8 col-md-6 col-lg-5 col-xl-4 main-content d-flex justify-content-center position-relative"
+          class="col-12 main-content d-flex flex-column position-relative bg-secondary mt-5 px-0 "
         >
+        <div class="col-12 bg-danger dashboard-header">Dashboard</div>
+        <div class="col-12 bg-light  d-flex justify-content-end "> 
+          <div class="button-container ">
+          <button
+            type="button"
+            id="add-button"
+            class="btn btn-outline-info add-button"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-plus d-block d-md-none" viewBox="0 0 16 16">
+              <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" stroke="#80d9ed"
+              stroke-width="0.3"/>
+            </svg>
+            <span class=" d-none d-md-block">Create New Request</span>
+          </button>
+        </div></div>
+        <div class="col-12 bg-success flex-grow-1 ">
+
+          <div class="divtable accordion-xs">
+            <div class="tr headings">
+              <div class="th created-date">Created Date <i class="fa-solid fa-arrow-down"></i></i></div>
+              <div class="th lastname">Last Name</div>
+              <div class="th username">Username</div>
+            </div>
+            <div class="tr">
+              <div class="td created-date accordion-xs-toggle"><i class="fa-regular fa-clock d-md-none" style="color: #80fffd;"></i><span>Mark</span></div>
+              <div class="accordion-xs-collapse">
+                <div class="inner">
+                  <div class="td lastname">Otto</div>
+                  <div class="td username">@mdo</div>
+                </div>
+              </div>
+            </div>
+            <div class="tr">
+              <div class="td created-date accordion-xs-toggle">Jacob</div>
+              <div class="accordion-xs-collapse">
+                <div class="inner">
+                  <div class="td lastname">Thornton</div>
+                  <div class="td username">@fat</div>
+                </div>
+              </div>
+            </div>
+            <div class="tr">
+              <div class="td created-date accordion-xs-toggle">Larry</div>
+              <div class="accordion-xs-collapse">
+                <div class="inner">
+                  <div class="td lastname">the Bird</div>
+                  <div class="td username"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+        </div>
           
           
       </div>
@@ -111,6 +174,7 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="custom.js"></script>
   </body>
 </html>
